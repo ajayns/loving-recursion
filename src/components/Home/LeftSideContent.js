@@ -14,10 +14,10 @@ import donut1 from "../../assets/images/donut-1.svg"
 // Icon imports
 import IndexIcon from "../../assets/icons/32x32/index-yellow.inline.svg"
 
-let Splitting
-if (typeof window !== `undefined`) {
-  Splitting = require("splitting")
-}
+// let Splitting
+// if (typeof window !== `undefined`) {
+//   Splitting = require("splitting")
+// }
 
 // Renders the list of chapters
 const Chapters = () => {
@@ -48,11 +48,11 @@ const LeftSideContent = () => {
   const [scrollContext, setScrollContext] = useContext(RightSideScrollContext)
 
   useLayoutEffect(() => {
-    Splitting({ by: "words" })
+//     Splitting({ by: "words" })
   })
 
   useEffect(() => {
-    if (typeof window === "undefined") return null
+//     if (typeof window === "undefined") return null
     const title = document.querySelector(".home-page__left__title")
 
     setTimeout(() => {
